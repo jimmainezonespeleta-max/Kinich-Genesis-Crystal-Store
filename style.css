@@ -1,0 +1,222 @@
+
+:root{
+    --bg:#1b8d2a;
+    --card:#043003;
+    --ink:#000000;
+    --muted:#ffffff;
+    --accent:#347a2b;
+    --accent-2:#3fa83b;
+    --accent-3:#FFFF00;
+}
+
+*{box-sizing: border-box;}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    background-image: url('2af6a48746be79f19a369002b4ba38a0.jpg');
+    background-size: cover;      
+    background-repeat: no-repeat; 
+    background-position: center;  
+    background-attachment: fixed; 
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+}
+
+ul li{
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(148,148,148,0.4);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+ul li:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rbga(188,187,187,0.6);
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent);
+    transition: color 1.5s ease;
+    display: block;
+}
+
+ul li a:hover{
+    color: var(--accent-2);
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--card);
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.nav img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px; 
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 0 20px;
+}
+
+.nav a:hover {
+  color: var(--accent-2);
+}
+
+h1{
+margin: 16px 0 8px;
+color:var(--accent-3);
+font-size: 8rem;
+-webkit-text-stroke: 5px var(--ink);}
+
+
+h2{
+margin: 16px 0 8px;
+color:var(--ink);
+background-color: var(--accent-3);
+text-align: center;
+}
+p{
+margin: 16px 0 8px;
+color:var(--ink);
+}
+
+.cards a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  transition: transform 0.6s ease;
+  animation: transform 2s ease;
+}
+.cards img {
+  width: 40px;       
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px; 
+  transition: transform 0.6s ease;
+  animation: transform 2s ease;
+}
+.cards li {
+  display: flex;
+  align-items: center;
+  background: var(--card);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.301);
+  transition: transform 0.6s ease;
+  animation:  transform 2s ease;
+}
+ 
+
+#kinic{
+  position: relative;
+  background-image: url('Screenshot\ 2025-10-08\ 182507.png'); /* bg image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 260px 0px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.6s ease;
+  animation: transform 2s ease;
+
+}
+
+#genesis{ padding: 50px 200px; min-height: 1000px;}
+#contact { background-color:var(--card) ;margin: 0px 0 0px;}
+#about{ padding: 260px 250px;}
+
+
+
+/*for box*/
+.center-box {
+  border: 2px solid white;
+  padding: 2px 2px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #043003;
+}
+.center-box a{
+font-size: small;
+text-align: center;
+align-items: center;
+}
+
+.continue-btn {
+  color: white;
+  text-decoration: none;
+
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.continue-btn:hover {
+  color: lime;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--card);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px 0;
+  border-top: 1px solid white;
+  z-index: 100;
+}
+
+@keyframes transform {
+    0% {transform: translateY(300px);}
+    50%{transform: scale(1.5, 1.5);}
+
+}
